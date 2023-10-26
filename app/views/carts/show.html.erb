@@ -1,3 +1,8 @@
+<% if enhanced_cart.length == 0 %>
+  <h2 class="alert alert-info text-center">
+    Your cart is empty, please go to <%= link_to 'home', root_path %> page?
+  </h2>
+<% else %>
 <section class="cart-show">
 
   <header class="page-header">
@@ -50,3 +55,4 @@
   </div>
 
 </section>
+<% end %>
